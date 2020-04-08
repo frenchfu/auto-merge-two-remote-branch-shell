@@ -15,7 +15,7 @@ ANT下載位置 http://apache.stu.edu.tw//ant/binaries/apache-ant-1.10.7-bin.zip
 範例如下
 projectName;remote one URL;remore two URL;結束後你想開啟的網站URL
 like below
-myproject;ssh://git@gitlab.gittest.com.tw:10022/CLOUD/myproject.git;ssh://git@127.0.0.1:10022/CLOUD/myproject.git;http://127.0.0.1:8080/job/VPETAX_CLOUD_MSK/
+myproject;ssh://git@gitlab.gittest.com.tw:10022/CLOUD/myproject.git;ssh://git@127.0.0.1:10022/CLOUD/myproject.git;http://127.0.0.1:8080/job/CLOUD_/
 
 參數範例 開啟 git bash 並執行
 sh uploadEdition.sh myproject develop develop TO_MASTER
