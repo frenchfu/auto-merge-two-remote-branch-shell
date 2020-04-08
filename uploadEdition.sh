@@ -172,8 +172,10 @@ echo "%%%%step1 do clone from remote and add inside remote <====="
 #step2 do pull and compler
 echo "%%%%step2 do pull and compler =====>"
 echo "build class js"
-git checkout git checkout $SOURCE_BRANCH_NAME
+git checkout -b  $SOURCE_BRANCH_NAME origin/$SOURCE_BRANCH_NAME
+git checkout $SOURCE_BRANCH_NAME
 git pull
+
 ant -f build-class.xml
 #js
 run_all_bat
@@ -208,6 +210,15 @@ if [ "$TO_MASTER" == "TO_MASTER" ];then
 	git push inside HEAD:master
 fi
 echo "%%%%step4 check if need to merge to masterr <====="
+
+#step 5 merge back to SIURCE
+echo "%%%%step5 mergee back to source =====>"
+git checkout $SOURCE_BRANCH_NAME
+git pull
+git merge inside_$TARGET_BRANCH_NAME
+git push origin
+echo "%%%%step5 mergee back to source  <====="
+
 
 echo " complete";
 cd ../
