@@ -1,0 +1,3 @@
+myproject;ssh://git@gitlab.gittest.com.tw:10022/CLOUD/myproject.git;ssh://git@127.0.0.1:10022/CLOUD/myproject.git;http://127.0.0.1:8080/job/CLOUD_/
+
+#要加空行不然尾行無法辨識確認後此行可以刪除
